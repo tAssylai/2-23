@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <div class="form-header"><h1>Registration Form</h1></div>
+    <div class="form-container">
+      <form action="Main.php" method="post">
+        <label for="Firstname">Firstname:</label>
+        <input type="text" name="Firstname" id="Firstname" required>
+        <br>
+        <label for="Lastname">Lastname:</label>
+        <input type="text" name="Lastname" id="Lastname" required>
+        <br>
+        <label for="email">Email adress:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="ConfirmPassword">Confirm Password:</label>
+        <input type="password" name="ConfirmPassword" id="ConfirmPassword" required>
+        <br>
+        <label for="DateOfBirth">Birth Date:</label>
+        <input type="date" name="DateOfBirth" id="DateOfBirth" required>
+        <br>
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="Gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+
+        <div class="hobbies-section">
+            <h3>Hobbies/Interests:</h3>
+            <div class="hobbies-grid">
+          <div class="hobby-item">
+              <input type="checkbox" name="hobbies[]" id="3DModelling" value="3DModelling">
+              <label for="3DModelling">3D Modelling</label>
+          </div>
+          <div class="hobby-item">
+              <input type="checkbox" name="hobbies[]" id="Coding" value="Coding">
+              <label for="Coding">Coding</label>
+          </div>
+          <div class="hobby-item">
+              <input type="checkbox" name="hobbies[]" id="WebDesign" value="WebDesign">
+              <label for="WebDesign">Web Design</label>
+          </div>
+          <div class="hobby-item">
+              <input type="checkbox" name="hobbies[]" id="AndroidDeveloper" value="AndroidDeveloper">
+              <label for="AndroidDeveloper">Android Development</label>
+          </div>
+          <div class="hobby-item">
+              <input type="checkbox" name="hobbies[]" id="WebDeveloper" value="WebDeveloper">
+              <label for="WebDeveloper">Web Development</label>
+          </div>
+            </div>
+        </div>
+
+        <label for="Country">Country:</label>
+        <select name="Country" id="Country" required>
+            <option value="">Select a country</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+        </select>
+        <br>
+        <label for="AddInfo">Additional info:</label>
+        <input type="text" name="AddInfo" id="AddInfo" required>
+        <br>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+</body>
+</html>
