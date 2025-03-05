@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #342E37;
+    font-family: Funnel;
+    justify-content: center;
+    text-align: center;
+    color: #DBF9F4;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: Funnel;
+    src: url("Fonts/FunnelDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Anta;
+    src: url("Fonts/Anta-Regular.ttf");
+}
+
+h1 {
+    color: #C2948A;
+    font-family: Anta;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #4B3F46;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.element {
+    margin: 0;
+    text-align: left;
+}
+
+.text {
+    font-weight: lighter;
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    color: #DBF9F4;
+}
+
+label {
+    margin: 0;
+    margin-top: 10px;
+    color: #C2948A;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    color: #342E37;
+    background-color: #fff;
+    font-family: Funnel;
+    font-size: 16px;
+    border: 2px solid #C2948A;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #C2948A;
+    background-color: #f0f0f0;
+}
+
+input[type="checkbox"] {
+    color: #fff;
+    flex-direction: row;
+}
+
+button[type="button"] {
+    background-color: #C2948A;
+    color: #342E37;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #A67C5A;
+}
+
+input[type="reset"] {
+    background-color: #DBF9F4;
+    color: #342E37;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="reset"]:hover {
+    background-color: #A0D9D0;
+}

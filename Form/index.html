@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <h1>REGISTRATION FORM</h1>
+        <div class="form">
+            <div class="element">
+                <label for="fname" class="text">First name:</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="element">
+                <label for="lname" class="text">Last name:</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+
+            <div class="element">
+                <label for="email" class="text">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="element">
+                <label for="pwd" class="text">Password:</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+
+            <div class="element">
+                <label for="cpwd" class="text">Confirm password:</label>
+                <input type="password" id="cpwd" name="cpwd">
+            </div>
+
+            <div class="element">
+                <label for="dob" class="text">Date of birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="element">
+                <label for="gender" class="text">Gender:</label>
+                <input type="text" id="gender" name="gender">
+            </div>
+
+            <div class="element">
+                <label for="hobby" class="text">Hobbies/Interests:</label>
+                <input type="checkbox" id="sing" name="sing" value="Singing">
+                <label for="sing"> Singing </label><br>
+                <input type="checkbox" id="dance" name="dance" value="Dancing">
+                <label for="dance"> Dancing </label><br>
+                <input type="checkbox" id="play" name="play" value="Playing music">
+                <label for="play"> Playing music </label><br>
+                <input type="checkbox" id="games" name="games" value="Video games">
+                <label for="games">Video games</label><br>
+                <input type="checkbox" id="book" name="book" value="Reading">
+                <label for="book">Reading</label><br>
+            </div>
+
+            <div class="element">
+                <label for="country" class="text">Country:</label>
+                <select id="country" name="country">
+                    <option value="kz">Kazakhstan</option>
+                    <option value="ru">Russia</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="USA">USA</option>
+                  </select>
+            </div>
+
+            <button type="button" onclick="alert('Form sent!')">Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
