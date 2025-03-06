@@ -72,6 +72,7 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
+    box-shadow: 0 4px 5px rgba(21, 21, 21, 0.1);
 }
 
 input[type="submit"]:hover {
@@ -100,4 +101,27 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 4px 5px rgba(21, 21, 21, 0.1);
     margin-bottom: 10px;
+}
+
+.register-btn {
+    color: #ff8234;
+    background-color: #373737;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(21, 21, 21, 0.1);
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #ff8234;
+    background-color: #373737;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(21, 21, 21, 0.1);
+    font-size: 40px;
+}
+
+.MrBeast {
+    margin-left: 50px;
+    border-radius: 8px;
 }
