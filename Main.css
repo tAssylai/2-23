@@ -123,5 +123,8 @@ h3 {
 
 .MrBeast {
     margin-left: 50px;
-    border-radius: 8px;
+    border-radius: 2px;
+    background-color: #ff6200;
+    padding: 2px;
+    padding-top: 5px;
 }
