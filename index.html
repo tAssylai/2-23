@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrationn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="register-form" id="registerForm">
+            <h2>Registration</h2>
+            <div class="input-group">
+                <label for="username">First Name</label>
+                <input type="text" required placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label for="email">Last Name</label>
+                <input type="email"   required placeholder="Enter your last name">
+            </div>
+            <div class="input-group">
+                <label for="date-birth">Date of birth</label>
+                <input type="date" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <div class="radios">
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="Hobbies">Hobbies</label>
+                <div class="checkboxes">
+                    <div class="checkbox">
+                        <label for="games">Games</label>
+                        <input type="checkbox" id="games">
+                    </div>
+                    <div class="checkbox">
+                        <label for="music">Music</label>
+                        <input type="checkbox" id="music">
+                    </div>
+                </div>
+            </div>            
+            <div class="input-group">
+                <label for="Country">Country</label> <br>
+                <select>
+                    <option value="1">Kazakhstan</option>
+                    <option value="2">Uzbekistan</option>
+                    <option value="3">Russia</option>
+                    <option value="4">Europe</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="comment">Tell something about yourself</label>
+                <textarea placeholder=""></textarea>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" required placeholder="Enter your password">
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" required placeholder="Repeat password">
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn">Registration</button>
+            </div>
+            <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
