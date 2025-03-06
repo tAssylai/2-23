@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация Успешна</title>
+    <style>
+        
+        h1 {
+         text-align: center;
+         margin-top: 20rem;
+         font-family: 'Courier New', Courier, monospace;
+        }
+        .checkmark {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 5;
+            stroke: #4CAF50;
+            stroke-miterlimit: 10;
+            margin: 5rem auto;
+            box-shadow: inset 0px 0px 0px #4CAF50;
+            animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+        }
+
+        .checkmark__circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 4;
+            stroke-miterlimit: 10;
+            stroke: #4CAF50;
+            fill: #fff;
+            animation: stroke .6s cubic-bezier(.65,.15,.45,.85) forwards;
+        }
+
+        .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke .3s cubic-bezier(.65,.15,.45,.85) .5s forwards;
+        }
+
+        .cat {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            bottom: -170px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: slideUp 1s ease-in-out 1s forwards;
+        }
+
+        @keyframes slideUp {
+            100% {
+                bottom: 40px;
+            }
+        }
+
+        @keyframes stroke {
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes scale {
+            0%, 100% {
+                transform: none;
+            }
+            50% {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+
+        @keyframes fill {
+            100% {
+                box-shadow: inset 0px 0px 0px 30px #4CAF50;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Регистрация прошла успешно!</h1>
+    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" id="checkmark">
+        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+    </svg>
+    <img class="cat" src="https://sun9-3.userapi.com/impf/c830208/v830208543/1423e3/cFp1E3FTrSQ.jpg?size=448x512&quality=96&sign=b4973e952a021536ad42a5558427e46a&type=album" alt="Кот">
+    <audio id="checkmark-sound" src="sound.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
