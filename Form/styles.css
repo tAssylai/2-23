@@ -58,7 +58,8 @@ label {
     color: #C2948A;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     color: #342E37;
@@ -78,14 +79,24 @@ input:focus {
 }
 
 input[type="checkbox"] {
-    color: #fff;
-    flex-direction: row;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-button[type="button"] {
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="submit"] {
     background-color: #C2948A;
     color: #342E37;
     font-size: 16px;
+    max-width: 6em;
+    max-height: 3em;
     margin: 10px;
     padding: 10px 20px;
     border: none;
@@ -94,7 +105,7 @@ button[type="button"] {
     transition: background-color 0.3s ease;
 }
 
-button[type="button"]:hover {
+input[type="submit"]:hover {
     background-color: #A67C5A;
 }
 
@@ -102,6 +113,8 @@ input[type="reset"] {
     background-color: #DBF9F4;
     color: #342E37;
     font-size: 16px;
+    max-width: 6em;
+    max-height: 3em;
     margin: 10px;
     padding: 10px 20px;
     border: none;

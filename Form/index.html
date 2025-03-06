@@ -14,7 +14,7 @@
         <div class="form">
             <div class="element">
                 <label for="fname" class="text">First name:</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required>
             </div>
 
             <div class="element">
@@ -24,17 +24,17 @@
 
             <div class="element">
                 <label for="email" class="text">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div class="element">
                 <label for="pwd" class="text">Password:</label>
-                <input type="password" id="pwd" name="pwd">
+                <input type="password" id="pwd" name="pwd" minlength="6" required>
             </div>
 
             <div class="element">
                 <label for="cpwd" class="text">Confirm password:</label>
-                <input type="password" id="cpwd" name="cpwd">
+                <input type="password" id="cpwd" name="cpwd" minlength="6" required>
             </div>
 
             <div class="element">
@@ -44,21 +44,30 @@
 
             <div class="element">
                 <label for="gender" class="text">Gender:</label>
-                <input type="text" id="gender" name="gender">
+                <select id="gender" name="gender">
+                    <option value="no">Choose not to say</option>
+                    <option value="male">Male</option>
+                    <option value="fem">Female</option>
+                </select>
             </div>
 
             <div class="element">
                 <label for="hobby" class="text">Hobbies/Interests:</label>
-                <input type="checkbox" id="sing" name="sing" value="Singing">
-                <label for="sing"> Singing </label><br>
-                <input type="checkbox" id="dance" name="dance" value="Dancing">
-                <label for="dance"> Dancing </label><br>
-                <input type="checkbox" id="play" name="play" value="Playing music">
-                <label for="play"> Playing music </label><br>
-                <input type="checkbox" id="games" name="games" value="Video games">
-                <label for="games">Video games</label><br>
-                <input type="checkbox" id="book" name="book" value="Reading">
-                <label for="book">Reading</label><br>
+                <div class="check">
+                    <label><input type="checkbox" id="sing" name="sing" value="Singing">Singing</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox" id="dance" name="dance" value="Dancing">Dancing</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox" id="play" name="play" value="Playing music"> Playing music </label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox" id="games" name="games" value="Video games">Video games</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox" id="book" name="book" value="Reading">Reading</label>
+                </div>
             </div>
 
             <div class="element">
@@ -68,11 +77,24 @@
                     <option value="ru">Russia</option>
                     <option value="UK">United Kingdom</option>
                     <option value="USA">USA</option>
-                  </select>
+                    <option value="fr">France</option>
+                    <option value="sp">Spain</option>
+                    <option value="ch">China</option>
+                    <option value="skr">South Korea</option>
+                    <option value="jp">Japan</option>
+                    <option value="gr">Germany</option>
+                </select>
             </div>
 
-            <button type="button" onclick="alert('Form sent!')">Submit</button>
-            <input type="reset" value="Reset">
+            <div class="element">
+                <label for="comment" class="text">Additional comments:</label>
+                <textarea name="comments" rows="5" cols="30" maxlength="256"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit" onclick="alert('Form sent!')">
+                <input type="reset" value="Reset">
+            </div>
         </div>
     </form>
 </body>
