@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .registration-form {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+
+        .registration-form h2 {
+            text-align: center;
+            color: #3399ff;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-group label {
+            margin-right: 10px;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Pacifico', cursive, sans-serif;
+        }
+
+        .submit-button:hover {
+            background-color: #267fd9;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="registration-form" action="#" method="post">
+        <h2>Registration Form</h2>
+
+        <label for="first-name">First Name *</label>
+        <input type="text" id="first-name" name="first-name" required minlength="2" maxlength="30">
+
+        <label for="last-name">Last Name *</label>
+        <input type="text" id="last-name" name="last-name" required minlength="2" maxlength="30">
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="confirm-password">Confirm Password *</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Gender *</label>
+        <input type="radio" id="gender-male" name="gender" value="Male" required>
+        <label for="gender-male" style="display:inline;">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="Female" required>
+        <label for="gender-female" style="display:inline;">Female</label>
+        <input type="radio" id="gender-other" name="gender" value="Other" required>
+        <label for="gender-other" style="display:inline;">Other</label>
+
+        <label>Hobbies / Interests</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="Traveling"> Traveling</label>
+            <label><input type="checkbox" name="hobbies" value="Music"> Music</label>
+            <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+        </div>
+
+        <label for="country">Country *</label>
+        <select id="country" name="country" required>
+            <option value="">--Select your country--</option>
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="comments">Comments or Additional Information</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+        <button type="submit" class="submit-button">Register</button>
+    </form>
+
+</body>
+</html>
